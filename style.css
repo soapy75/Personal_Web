@@ -1,0 +1,56 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+#interactive-bg {
+    position: absolute; /* Use absolute positioning to allow it to be placed correctly */
+    height: 80%; 
+    width: 70%; 
+    z-index: 3; /* Set the z-index lower to ensure it's behind the container */
+}
+
+.container {
+    background-color: #7DE2D1; 
+    height: 100%; 
+    width: 100%;  
+    overflow: hidden; /* Hide overflow for any bubbles that go outside */
+    z-index: 2; /* Set z-index higher to place it above the canvas */
+}
+
+/* Common styling for all corner divs */
+.corner-div {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    transform-origin: bottom left; /* Set the origin to the bottom-left corner */
+    background-color: #CEF9F2;
+    border-radius: 10px;
+    opacity: 0.8; /* Optional: for layering transparency */
+}
+
+/* Different sizes for each div */
+.scale-1 {
+    width: 50px;
+    height: 50px;
+}
+
+.scale-2 {
+    width: 100px;
+    height: 100px;
+    background-color: #B2E7D9;
+}
+
+.scale-3 {
+    width: 150px;
+    height: 150px;
+    background-color: #8FD7C1;
+}
+
+.scale-4 {
+    width: 200px;
+    height: 200px;
+    background-color: #6FCFB0;
+}
